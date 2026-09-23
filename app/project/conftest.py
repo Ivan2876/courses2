@@ -1,5 +1,5 @@
 from pytest import fixture
-
+from hm3_model_shopping_cart import ShoppingCart
 from models import BankAccount
 
 
@@ -30,3 +30,7 @@ def bank_account_2(bank_account_owner_name: str) -> BankAccount:
     # print(444444444444444444444444444)
     bank_account_created = BankAccount(owner=bank_account_owner_name)
     return bank_account_created
+
+@fixture(scope='class')
+def shopping_cart() -> ShoppingCart:
+    return ShoppingCart()
