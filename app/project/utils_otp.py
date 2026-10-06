@@ -11,7 +11,7 @@ totp = pyotp.TOTP(secret)
 
 
 uri = totp.provisioning_uri(
-    name='user@example.com',
+    name='van@exaple.com',
     issuer_name='MyApp',
     image='https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png'
 )
